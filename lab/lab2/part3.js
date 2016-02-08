@@ -31,8 +31,8 @@ var largeStationList = _.filter(data, function(i){
 
 console.log(largeStationList);
 
-var largeStationCount = _.countBy(largeStationList,function(i){
-  return i[3];
+var largeStationCount = _.countBy(data,function(i){
+  return i[3]>20;
 });
 
 console.log(largeStationCount);
